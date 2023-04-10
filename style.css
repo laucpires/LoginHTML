@@ -1,0 +1,155 @@
+/* GERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #323232;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #a6e4d6, #0ccda3, #137c65);
+    background-size: 200% 200%;
+    animation: colors 5s ease infinite;
+}
+  
+  @keyframes colors {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.bi-person-circle {
+    font-size: 100px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem; /* MELHOR MANEIRA DE DEFINIR FONTE PORQUE SE ADAPTA AO TAMANHO DA TELA */
+    transition: .5s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #137c65;
+}
+
+/* LOGIN-CONTAINER */
+
+#login-container {
+    background-color: #fff;
+    width: 400px;
+    margin: auto; /* CENTRALIZAR O ITEM HORIZONTALMENTE */
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+/* FORMULÁRIO LOGIN */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border: 1px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: end;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    margin: 20px 0px;
+    color: #fff;
+    background-color: #0ccda3;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #137c65;
+    transition: .5s;
+}
+
+input[type="submit"]:not(:hover) {
+    background-color: #0ccda3;
+    transition: .5s;
+}
+
+/* SOCIAL-CONTAINER */
+
+#social-container, #social-container p {
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+#social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+/* REGISTER-CONTAINER */
+
+#register-container p {
+    margin-bottom: 10px;
+}
+
+.bi:hover {
+    color: #137c65;
+    transition: .5s;
+}
+
+.bi-person-circle:not(:hover) {
+    color: #0ccda3;
+    transition: .5s;
+}
+
+.bi:not(:hover) {
+    transition: .5s;
+}
